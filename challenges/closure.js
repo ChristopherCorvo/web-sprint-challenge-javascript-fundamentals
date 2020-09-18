@@ -20,7 +20,7 @@ myFunction();
 
 // Answer: In this case nestedFunction() is the child to myFunction(), the child function has access to the variables stored within the parent function.
 
-/* Task 2: Counter */
+/* Task 2: Counter **DONE**
 
 /* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. 
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
