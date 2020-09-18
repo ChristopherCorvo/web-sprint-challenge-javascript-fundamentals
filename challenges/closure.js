@@ -18,7 +18,7 @@ myFunction();
 
 // Explanation: 
 
-// Answer: In this case nestedFunction() is the child to myFunction(), the child function has access to the variables stored within the parent function.
+// Answer: In this case nestedFunction() is the child to myFunction(), the child function has access to the variables stored within the parent function's scope.
 
 /* Task 2: Counter **DONE**
 

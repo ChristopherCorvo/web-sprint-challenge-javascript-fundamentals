@@ -38,7 +38,8 @@ tasks.
 
 3. What is closure? 
 
-Answer: Simply put closure describes how a child function has access to the parent function and its variables but not vice versa.
+Answer: Simply put closure describes how a child function has access to the parent function's scope but not vice versa. Any variables stored in the parent
+functions scope would be accessible inside the child function. 
 
 
 4. Describe the four rules of the 'this' keyword.
@@ -46,8 +47,7 @@ Answer: Simply put closure describes how a child function has access to the pare
 Answer: There are four rules that govern the context of the 'this' keyword. Each of these rules determines
 where 'this' will begin to point. 
 
-    1) window binding = if 'this' is attached to the global scope which means none of the below binding rules are in effect, then 'this' will refer or point to the larger window object. This is
-    rarely if ever something you want to happen. If you see this taking effect then you have an error. 
+    1) window binding = if 'this' is attached to the global scope which means none of the below binding rules are in effect, then 'this' will refer or point to the larger window object. This is rarely if ever something you want to happen. If you see this taking effect then you have an error. 
 
     2) implicit binding = happens at function invocation. Look to the left of the dot to understand going forward where 'this' is now pointing. ie myObj.eat() -- this will be pointing to myObj
 
