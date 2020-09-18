@@ -29,7 +29,11 @@ const displayNames = [];
 zooAnimals.forEach(function(item){
   displayNames.push(`Name: ${item.animal_name}, ${item.scientific_name}`)
 })
+
 console.log(displayNames);
+
+// Arrow Function
+// zooAnimals.forEach(item => displayNames.push(`Name: ${item.animal_name}, ${item.scientific_name}`))
 
 /* Request 2: .map() **DONE**
 
@@ -45,6 +49,9 @@ const lowCaseAnimalNames = zooAnimals.map(function(item){
 
 console.log(lowCaseAnimalNames);
 
+// Arrow Function
+// const lowCaseAnimalNames = zooAnimals.map(item => item.animal_name.toLocaleLowerCase());
+
 /* Request 3: .filter() **DONE**
 
 The zoos are concerned about animals with a lower population count. 
@@ -56,6 +63,9 @@ const lowPopulationAnimals = zooAnimals.filter(function(item){
   return item.population < 5;
 })
 console.log(lowPopulationAnimals);
+
+// Arrow Function
+// const lowPopulationAnimals = zooAnimals.filter(item => item.population < 5);
 
 /* Request 4: .reduce() **DONE**
 
@@ -72,6 +82,8 @@ populationTotal = zooAnimals.reduce(function(accumulator, currentvalue){
 }, 0)
 console.log(populationTotal);
 
+// Arrow Function
+// populationTotal = zooAnimals.reduce((accumulator, currentvalue) => {return accumulator + currentvalue.population; }, 0);
 
 // ==== Callbacks ====  
 
