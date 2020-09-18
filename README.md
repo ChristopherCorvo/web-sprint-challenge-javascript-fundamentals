@@ -27,13 +27,39 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
+Answer: These two methods have one fundamental difference. The forEach method is meant to display data from an array but not
+mutate the original data set. The map method on the other hand returns a new array with the specific information you wanted to see. 
+
 2. Explain the difference between a callback and a higher order function.
 
-3. What is closure?
+Answer: A callback function usually accomplishes one specific task i.e return a + b. Higher order functions solve more complex problems. 
+Call back functions get passed into higher order functions where they are then used to help solve or accomplish more complex or abstract 
+tasks. 
+
+3. What is closure? 
+
+Answer: Simply put closure describes how a child function has access to the parent function and its variables but not vice versa.
+
 
 4. Describe the four rules of the 'this' keyword.
 
+Answer: There are four rules that govern the context of the 'this' keyword. Each of these rules determines
+where 'this' will begin to point. 
+
+    1) window binding = if 'this' is attached to the global scope which means none of the below binding rules are in effect, then 'this' will refer or point to the larger window object. This is
+    rarely if ever something you want to happen. If you see this taking effect then you have an error. 
+
+    2) implicit binding = happens at function invocation. Look to the left of the dot to understand going forward where 'this' is now pointing. ie myObj.eat() -- this will be pointing to myObj
+
+    3) explicit binding =  This happens because you are using either: .call(), .apply(), or .bind(). Each method has different use cases though .call() is probably the most widely used. Both .call() and .apply() invoke the function immediatly where .bind() returns a function that can be invoked later on. 
+
+    4 new binding = an example of new binding is when you use the 'new' keyword when creating a new instance
+    of an object. 'This' will now begin to point to the new obj that was created. 
+
 5. Why do we need super() in an extended class?
+
+Answer: When you employ extend() what you are doing is creating a subclass of a parent class. 
+You then use super() to create a link between the parent and the child. super() is what allows the child to access, grab or call functions and variables within the parent class. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
